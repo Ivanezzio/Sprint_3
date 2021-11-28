@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: ru.yandex.praktikum.CreateCourierPositiveTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.745 s <<< FAILURE! - in ru.yandex.praktikum.CreateCourierPositiveTests
+reRegistrationCourierTest(ru.yandex.praktikum.CreateCourierPositiveTests)  Time elapsed: 1.424 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...ин уже используется.[]> but was:<...ин уже используется.[ Попробуйте другой.]>
+	at ru.yandex.praktikum.CreateCourierPositiveTests.reRegistrationCourierTest(CreateCourierPositiveTests.java:56)
+
