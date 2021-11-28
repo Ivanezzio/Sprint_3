@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: ru.yandex.praktikum.AuthorisationCourierNegativeTests
--------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 23.045 s <<< FAILURE! - in ru.yandex.praktikum.AuthorisationCourierNegativeTests
-courierAuthorisationWithOutPassword(ru.yandex.praktikum.AuthorisationCourierNegativeTests)  Time elapsed: 15.03 s  <<< ERROR!
-org.junit.runners.model.TestTimedOutException: test timed out after 15000 milliseconds
-	at app//ru.yandex.praktikum.AuthorisationCourierNegativeTests.courierAuthorisationWithOutPassword(AuthorisationCourierNegativeTests.java:52)
-
