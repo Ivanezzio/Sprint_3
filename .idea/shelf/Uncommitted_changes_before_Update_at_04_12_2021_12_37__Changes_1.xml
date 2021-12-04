@@ -1,0 +1,44 @@
+<changelist name="Uncommitted_changes_before_Update_at_04_12_2021_12_37_[Changes]1" date="1638610715658" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_12_37_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 04.12.2021 12:37 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ru/yandex/praktikum/Courier.class" />
+    <option name="AFTER_PATH" value="target/classes/ru/yandex/praktikum/Courier.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_12_37_[Changes]1/Courier.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/ru/yandex/praktikum/AuthorisationCourierPositiveTests.class" />
+    <option name="AFTER_PATH" value="target/test-classes/ru/yandex/praktikum/AuthorisationCourierPositiveTests.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_12_37_[Changes]1/AuthorisationCourierPositiveTests.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ru/yandex/praktikum/CourierClient.class" />
+    <option name="AFTER_PATH" value="target/classes/ru/yandex/praktikum/CourierClient.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_12_37_[Changes]1/CourierClient.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/ru/yandex/praktikum/OrderListCheck.class" />
+    <option name="AFTER_PATH" value="target/test-classes/ru/yandex/praktikum/OrderListCheck.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_12_37_[Changes]1/OrderListCheck.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/ru/yandex/praktikum/CreateOrderTest.class" />
+    <option name="AFTER_PATH" value="target/test-classes/ru/yandex/praktikum/CreateOrderTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_12_37_[Changes]1/CreateOrderTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/ru/yandex/praktikum/CreateCourierPositiveTests.class" />
+    <option name="AFTER_PATH" value="target/test-classes/ru/yandex/praktikum/CreateCourierPositiveTests.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_12_37_[Changes]1/CreateCourierPositiveTests.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/ru/yandex/praktikum/AuthorisationCourierNegativeTests.class" />
+    <option name="AFTER_PATH" value="target/test-classes/ru/yandex/praktikum/AuthorisationCourierNegativeTests.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_12_37_[Changes]1/AuthorisationCourierNegativeTests.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/ru/yandex/praktikum/CreateCourierNegativeTests.class" />
+    <option name="AFTER_PATH" value="target/test-classes/ru/yandex/praktikum/CreateCourierNegativeTests.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_12_37_[Changes]1/CreateCourierNegativeTests.class" />
+  </binary>
+</changelist>
