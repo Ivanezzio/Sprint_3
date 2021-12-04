@@ -3,7 +3,6 @@ package ru.yandex.praktikum;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
-
 import static io.restassured.RestAssured.given;
 
 public class CourierClient {
@@ -11,9 +10,7 @@ public class CourierClient {
     public final static String Type = "Content-type";
     public final static String APP = "application/json";
 
-
-    // метод создания курьера
-    @Step
+    @Step("Запрос на регистрацию курьера")
     public ValidatableResponse create(Courier courier) {
         return given()
                 .header(Type, APP)
@@ -23,8 +20,7 @@ public class CourierClient {
                 .then();
     }
 
-    // метод создания курьера, без логина
-    @Step
+    @Step("Запрос на регистрацию курьера без логина")
     public ValidatableResponse createWithOutLogin(Courier courier){
         String body = "{\"password\":\"" + courier.password + "\","
                 + "\"firstName\":\"" + courier.firstName + "\"}";
@@ -36,8 +32,7 @@ public class CourierClient {
                .then();
     }
 
-    // метод создания курьера, без пароля
-    @Step
+    @Step("Запрос на регистрацию курьера без пароля")
     public ValidatableResponse createWithOutPassword(Courier courier){
         String body = "{\"login\":\"" + courier.login + "\","
                 + "\"firstName\":\"" + courier.firstName + "\"}";
@@ -49,8 +44,7 @@ public class CourierClient {
                 .then();
     }
 
-    // метод для авторизации курьера в системе
-    @Step
+    @Step("Запрос на авторизацию курьера")
     public int login(CourierData courierData) {
         return given()
                 .header(Type, APP)
@@ -62,9 +56,8 @@ public class CourierClient {
                 .path("id");
     }
 
-    // метод для авторизации курьера в системе без логина
-    @Step
-    public ValidatableResponse loginWithoutLogin(Courier courier) {
+    @Step("Запрос на авторизацию курьера без логина")
+    public ValidatableResponse authorizationWithoutLogin(Courier courier) {
         String body = "{\"password\":\"" + courier.password + "\"}";
         return given()
                 .header(Type, APP)
@@ -74,9 +67,8 @@ public class CourierClient {
                 .then();
     }
 
-    // метод для авторизации курьера в системе без пароля
-    @Step
-    public ValidatableResponse loginWithoutPassword(Courier courier) {
+    @Step("Запрос на авторизацию курьера без пароля")
+    public ValidatableResponse authorizationWithoutPassword(Courier courier) {
         String body = "{\"login\":\"" + courier.login + "\"}";
         return given()
                 .header(Type, APP)
@@ -87,26 +79,22 @@ public class CourierClient {
 
     }
 
-    // метод для авторизации незарегистрированного курьера
-    @Step
-    public ValidatableResponse unregisteredCourierlogin(Courier courier) {
-        String body = "{\"login\":\"" + courier.login + "\","
-                + "\"password\":\"" + courier.password + "\"}";
-        return given()
+    @Step("Запрос на авторизацию незарегистрированного курьера")
+    public Response authorizationUnregisteredCourier(CourierData courierData) {
+        return (Response) given()
                 .header(Type, APP)
-                .body(body)
+                .body(courierData)
                 .when()
-                .post(APIURL+"login/")
-                .then();
+                .post(APIURL+"login/");
     }
 
-    // метод для удаления курьера
-    @Step
+    @Step("Запрос на удаление курьера")
     public void delete(int courierId) {
+        if (courierId != 0) {
                  given()
                 .header(Type, APP)
                 .when()
-                .post(APIURL + courierId);
+                .post(APIURL + courierId);}
 
     }
 

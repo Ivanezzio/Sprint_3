@@ -12,7 +12,8 @@ import static io.restassured.RestAssured.given;
 public class OrderListCheck  {
     @Before
     public void setUp() {
-        RestAssured.baseURI = "http://qa-scooter.praktikum-services.ru";}
+        RestAssured.baseURI = BaseUri.getBaseUri();
+    }
 
     @Test
     @DisplayName("Тест на проверку того, что запрос возвращает список заказов")

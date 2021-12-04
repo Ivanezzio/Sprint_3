@@ -15,8 +15,8 @@ import static org.junit.Assert.*;
 public class CreateOrderTest{
     @Before
     public void setUp() {
-        RestAssured.baseURI = "http://qa-scooter.praktikum-services.ru";}
-
+        RestAssured.baseURI = BaseUri.getBaseUri();
+    }
 
     private final String color;
     private final int unexpectedNumber;
